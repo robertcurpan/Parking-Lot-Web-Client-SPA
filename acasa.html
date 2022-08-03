@@ -1,0 +1,94 @@
+<h2>Welcome to the ParkingLot!</h2>
+
+<div class="flex-container">
+
+    <div class="flex-child-big">
+
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>Generate parking ticket</legend>
+                <div class="mediumFont inline-block-class">
+                    <label>Name:</label><br />
+                    <label>Vehicle:</label><br />
+                    <label>Color:</label><br />
+                    <label>Price:</label><br />
+                    <label>Electric:</label><br />
+                    <label>VIP:</label><br />
+                </div>
+            
+                <div class="mediumFont inline-block-class">
+                    <input type="text" name="name" id="name" /><br />
+                    <select name="vehicle" id="vehicle" >
+                        <option value="MOTORCYCLE">Motorcycle</option>
+                        <option value="CAR">Car</option>
+                        <option value="TRUCK">Truck</option>
+                    </select><br />
+                    <input type="text" name="color" id="color" /><br />
+                    <input type="number" name="price" id="price" /><br />
+                    <select name="electric" id="electric" >
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br />
+                    <select name="vip" id="vip" >
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br />
+                </div>
+            
+            </fieldset>
+            <input class="submit-button" type="button" name="generateParkingTicket" value="Generate parking ticket" onclick="doGenerateParkingTicket()" />
+            
+        </form>
+                
+        <form>
+        
+            <fieldset>
+                <legend>Leave parking lot</legend>
+                <div class="mediumFont inline-block-class">
+                    <label>Parking spot ID:</label><br />
+                </div>
+                <div class="mediumFont inline-block-class">
+                    <input type="number" name="parkingSpotId" id="parkingSpotId" /><br />
+                </div>
+            </fieldset>
+            
+            <input class="submit-button" type="button" name="leaveParkingLot" value="Leave parking lot" onclick="doLeaveParkingLot()" />
+        </form>
+                
+        <form>
+        
+            <fieldset>
+                <legend>Get parking spots</legend>
+            </fieldset>
+            
+            <input class="submit-button" type="button" name="getParkingSpots" value="Get parking spots" onclick="doGetParkingSpots()" />
+        </form>
+
+        <form>
+    
+            <fieldset>
+                <legend>Get tickets</legend>
+            </fieldset>
+            
+            <input class="submit-button" type="button" name="getTickets" value="Get tickets" onclick="doGetTickets()" />
+        </form>
+
+    </div>
+    
+    <div class="flex-child-small">
+
+        <input class="submit-button" type="button" name="displayParkingLotStatus" value="Display parking lot status" onclick="displayParkingLotStatusAsString()" />
+        <h3><u>Parking Lot Status</u></h3>
+        <u>Parking Spots</u><br />
+        <div id="parkingSpots"></div>
+        <u>Tickets</u><br />
+        <div id="tickets"></div>
+        <div id="parkingLotStatusErrors" style="color: red"></div>
+
+    </div>    
+    
+</div>
+
+
+

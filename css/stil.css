@@ -1,0 +1,64 @@
+nav {   
+    background-color: #babec7;
+    padding: 10px;
+    border: 1px dashed rgba(240, 241, 150, 0.6);
+}
+
+
+nav > a {
+    color: rgb(10, 10, 93);                        /* #000033*/
+    padding: 15px;
+    margin: 0px 10px;                   /* top & bottom ; right & left */
+    text-decoration: none;
+    flex: 1;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+body {
+    margin: 0px;
+    background-color: #fffffd;
+    font-size: 18px;
+}
+
+.mediumFont {
+    font-size: 20px;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
+  
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child-big {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.flex-child-small {
+    flex: 1;
+}
+
+.inline-block-class {
+    display: inline-block;
+}
+
+.submit-button {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
